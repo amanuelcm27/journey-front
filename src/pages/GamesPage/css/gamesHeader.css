@@ -1,0 +1,59 @@
+
+.game-header-content {
+  width: 50%;
+  margin: 0px auto;
+  padding: 30px;
+  font-family: var(--font-family);
+  font-size: 6rem;
+}
+.game-search {
+  width: 100%;
+  margin-top: 50px;
+}
+.search-form {
+  display: flex;
+  flex-direction: column;
+}
+.search-input {
+  width: 80%;
+  padding: 20px;
+  background-color: transparent;
+  font-family: var(--font-family);
+  font-size: 2rem;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+}
+.search-input::placeholder,
+.new-game-input::placeholder {
+  color: white;
+}
+
+.search-hold {
+  width: 20%;
+  margin-top: 10px;
+  font-size: 2rem;
+  background-image: url("../../../../public/images/cod.gif");
+  background-size: cover;
+  border-radius: 10px;
+}
+.search-btn {
+  width: 100%;
+  padding: 10px;
+  height: 100%;
+  color: rgb(0, 0, 0);
+  font-size: 1.45rem;
+  letter-spacing: 10px;
+  display: block;
+  font-family: var(--font-family);
+  background-color: transparent;
+  backdrop-filter: blur(8px);
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #31302b;
+  transition: all ease 0.8s;
+}
+.search-btn:hover {
+  box-shadow: inset 200px 0 0 0 #e0e0e0;
+  cursor: pointer;
+}

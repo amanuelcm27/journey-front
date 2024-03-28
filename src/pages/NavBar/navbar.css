@@ -1,0 +1,15 @@
+
+.navbar {
+  width: 100vw;
+  height: 100px;
+  background-color: #313244;
+}
+.nav-logo {
+  width: 50%;
+  height: 100%;
+  margin: 0px auto;
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: 5.5rem;
+  text-transform: uppercase;
+}

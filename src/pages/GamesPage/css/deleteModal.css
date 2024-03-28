@@ -1,0 +1,30 @@
+.delete-overlay {
+    position: fixed;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9;
+    background-color: transparent;
+    backdrop-filter: blur(18px);
+  }
+  .delete-container {
+    width: 40%;
+    height: auto;
+    margin:200px auto;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px black;
+  
+  }
+  .caution-box {
+    width: 90%;
+    margin:0px auto;
+    font-family: var(--font-family);
+    font-size: 3rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .delete-title {
+    color:rgb(255, 255, 0);
+  }
+  

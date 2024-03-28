@@ -1,0 +1,148 @@
+
+.main-overlay {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../../../public/images/tlou.png");
+  background-size: cover;
+  animation: slideOutLeft 1s forwards;
+}
+.overlay-container {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(15px);
+  overflow: auto;
+}
+.overlay-heading {
+  width: 50%;
+  margin: 0px auto;
+}
+.heading-text {
+  font-size: 6rem;
+  font-family: var(--font-family);
+  color: black;
+  background: linear-gradient(to right, #ff0202 0%, #000000 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.search-form-container {
+}
+.new-search-form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.new-game-input {
+  width: 100%;
+  padding: 20px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-family: var(--font-family);
+  color: white;
+  font-size: 2rem;
+}
+.new-game-input:focus {
+  border-bottom: 1px solid;
+  cursor: pointer;
+}
+.search-btn-ol {
+  width: 20%;
+  border-radius: 10px;
+  border: none;
+  margin-top: 10px;
+  font-family: var(--font-family);
+  font-size: 1.5rem;
+}
+.search-btn-ol:hover {
+  box-shadow: 1px 2px 19px red;
+}
+.close-overlay {
+  position: absolute;
+  left: 100px;
+  top: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 2px 4px 5px;
+  cursor: pointer;
+}
+.fa-xmark {
+  padding: 15px 20px;
+}
+.close-overlay:active {
+  background-color: rgb(252, 0, 0);
+}
+@keyframes slideOutLeft {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+.new-game-results {
+  width: 80%;
+  margin: 10px auto;
+}
+.result-cards {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+.result-card {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  display: flex;
+  overflow: hidden;
+  margin: 10px 0px;
+  box-shadow: 2px 2px 4px black;
+}
+.result-img {
+  width: 30%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+}
+.result-img:hover {
+  transform: scale(1.05);
+}
+
+.result-content {
+  width: 70%;
+  margin: 10px;
+  font-family: var(--font-family);
+  font-size: 2.3rem;
+}
+.result-text {
+  display: flex;
+}
+.add-game-btn {
+  margin-left: auto;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.add-game-btn:hover {
+  background-color: black;
+  color: white;
+}
+.notify-overlay {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height:100px;
+  background-color: rgba(0,0,0,0.5);
+  backdrop-filter: blur(8px);
+  z-index: 4;
+}
+.notify-msg {
+  font-size: 2rem;
+  font-family: var(--font-family);
+  padding-top:20px;
+  text-align: center;
+}

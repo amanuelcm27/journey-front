@@ -1,0 +1,71 @@
+:root {
+  --font-family: "Jolly Lodger";
+  --font-size: 5rem;
+}
+a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+img {
+  object-fit: cover;
+}
+.detail-img {
+  width: 100vw;
+  height: 700px;
+  border-color: linear-gradient(to bottom, red, black);
+  object-fit: cover;
+}
+.detail-container {
+  width: 100%;
+}
+.detail-sub-container {
+  width: 80%;
+  margin: 0px auto;
+}
+.game-title-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.detail-gt-g,
+.detail-gt {
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+  padding: 20px;
+}
+.detail-gt-g {
+  font-size: 2rem;
+}
+.game-description-container {
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: #313244;
+}
+.gd-header {
+  font-size: 2rem;
+  font-family: var(--font-family);
+  padding: 20px;
+  display: flex;
+}
+.gd-detail {
+  padding: 20px;
+}
+
+.gd-opinion-add {
+  margin-left: auto;
+}
+.gd-opinion-add:hover {
+  color:greenyellow;
+}
+.opinion-form {
+  width: 100%;
+  height: 400px;
+  background-color: transparent;
+  color:white;
+  font-family: var(--font-family);
+  font-size: 1.5rem;
+  padding:4px;
+  resize: none;
+}

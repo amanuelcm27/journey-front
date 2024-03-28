@@ -1,0 +1,158 @@
+
+.filters {
+  display: flex;
+  width: 80%;
+  height: 100px;
+  margin: 0px auto;
+}
+.filter-item {
+  margin: 15px auto;
+
+  padding: 15px;
+  font-family: var(--font-family);
+  letter-spacing: 10px;
+  font-size: 2rem;
+  border-radius: 10px;
+  background: linear-gradient(to left, rgb(0, 0, 0) 50%, rgb(255, 255, 255) 50%)right;
+  background-size: 200%;
+  border: 0.5px solid white;
+  transition: 0.5s ease-out;
+}
+.filter-item:hover {
+  background-position: left;
+  color: black;
+  cursor: pointer;
+}
+.genre-options {
+  position: absolute;
+  left:750px;
+  top:885px;
+  border-radius:10px ;
+  border:1px solid white;
+  background-color: rgb(255, 255, 255);
+  display: none;
+  z-index: 3;
+}
+.genre-list {
+  list-style: none;
+  padding:5px;
+  display: block;
+}
+.filter-item:hover .genre-options {
+  display: block;
+}
+li:hover {
+  background-color: #ececec;
+  cursor: pointer;
+}
+.search-results {
+  width: 80%;
+  margin: 0px auto;
+}
+.search-card-container {
+  width: 75%;
+  margin: 5px auto;
+  display: flex;
+  flex-direction: column;
+}
+.game-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 350px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 10px;
+}
+.card-img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 5px 5px 0px 0px;
+  transition: transform 0.3s ease-in-out;
+}
+.card-img:hover {
+  transform: scale(1.1);
+}
+.card-text {
+  width: 100%;
+  height: 30%;
+  background-color: #313244;
+  padding: 10px;
+  font-family: var(--font-family);
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.genre-dis {
+  font-size: 1.3rem;
+  display: flex;
+}
+.filter-state {
+  font-size: 3rem;
+  font-family: var(--font-family);
+  text-align: center;
+}
+.fa-trash   {
+  margin-left: auto;
+  padding-right: 20px;
+}
+.fa-trash:hover{
+  color: rgb(255, 0, 0);
+}
+.floating-icons {
+  position: fixed;
+  top: 100;
+  right: 0;
+  z-index: 2;
+}
+.floating-plus,
+.floating-wishlist,
+.floating-heart {
+  position: absolute;
+  right: 0;
+  margin: 20px 25px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 4px black;
+  cursor: pointer;
+}
+.floating-wishlist {
+  top: 65px;
+}
+.floating-heart {
+  top: 130px;
+}
+.fa-plus,
+.fa-list,
+.fa-heart {
+  margin: 0px auto;
+  padding: 9px 11px;
+  font-size: 2rem;
+}
+.fa-plus:hover,
+.fa-list:hover,
+.fa-heart:hover {
+  color: rgb(255, 255, 0);
+}
+.floating-plus:active {
+  color: rgb(255, 255, 255);
+  background-color: black;
+}
+.view-more {
+  width: 100;
+  padding-bottom:40px;
+  background: black;
+  text-align: center;
+}
+.view-more-btn {
+  padding:20px;
+  background:none;
+  border:none;
+  color:white;
+  font-size: 2rem;
+  font-family: var(--font-family);
+}
+.view-more-btn:hover {
+  color:blue
+}
