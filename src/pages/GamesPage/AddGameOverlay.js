@@ -35,7 +35,7 @@ const AddGameOverlay = ({ showOverlay, fetchData }) => {
     const description = await fetchDetails();
     const structuredData = { title, image, genre, description };
     axios
-      .post("http://localhost:8000/api/add_game/", structuredData)
+      .post("https://amanuelf.pythonanywhere.com/api/add_game/", structuredData)
       .then((response) => {
         setaddGameResponse(response.data);
       })

@@ -6,7 +6,7 @@ const DeleteCard = ({ game, fetchData, state, setDeleteOverlay }) => {
     const deleteGame = async () => {
       try {
         const response = await axios.delete(
-          `http://localhost:8000/api/remove/${game.id}/`
+          `https://journeysofaman.vercel.app/api/remove/${game.id}/`
         );
         setStatus(response.data);
         fetchData();

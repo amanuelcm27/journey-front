@@ -5,7 +5,7 @@ const WishListSideBar = ({ showWishList, setShowWishList }) => {
   const fetchWishlist = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:8000/api/show_wishlist/`
+        `https://journeysofaman.vercel.app/api/show_wishlist/`
       );
       setwishlist(response.data);
     } catch (e) {
@@ -15,7 +15,7 @@ const WishListSideBar = ({ showWishList, setShowWishList }) => {
   const removeFromWishList = async (item) => {
     try {
       const response = await axios.delete(
-        `http://localhost:8000/api/remove_wishlist/${item.id}/`
+        `https://journeysofaman.vercel.app/api/remove_wishlist/${item.id}/`
       );
       fetchWishlist();
     } catch (e) {

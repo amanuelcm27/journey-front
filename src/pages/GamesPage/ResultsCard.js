@@ -27,7 +27,7 @@ const ResultsCard = ({
       const updatedFavourite = { favourite: favouriteState };
       try {
         const response = await axios.patch(
-          `http://localhost:8000/api/mark_favourite/${game.id}/`,
+          `https://journeysofaman.vercel.app/api/mark_favourite/${game.id}/`,
           updatedFavourite
         );
         filterGameList(filterState,genreState);

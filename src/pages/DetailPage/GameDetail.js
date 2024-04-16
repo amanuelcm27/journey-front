@@ -18,7 +18,7 @@ const GameDetail = () => {
   const fetchDetails = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:8000/api/game_detail/${game_id}/`
+        `https://amanuelf.pythonanywhere.com/api/game_detail/${game_id}/`
       );
       setDetail(response.data);
       setOpinion(response.data.opinion);
@@ -34,7 +34,7 @@ const GameDetail = () => {
   const addOpinion = async () => {
     try {
       const response = await axios.patch(
-        `http://localhost:8000/api/add_opinion/${game_id}/`,
+        `https://amanuelf.pythonanywhere.com/api/add_opinion/${game_id}/`,
         { opinion: opinion }
       );
       fetchDetails();

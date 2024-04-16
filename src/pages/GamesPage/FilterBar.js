@@ -5,7 +5,7 @@ const FilterBar = ({ filterGameList }) => {
     const [titleState, settitleState] = useState("title");
     const [all_genres, setAllGenres] = useState([]);
     const fetchGenres = async () => {
-      const response = await axios.get(`http://localhost:8000/api/all_genres/`);
+      const response = await axios.get(`https://journeysofaman.vercel.app/api/all_genres/`);
       setAllGenres(response.data.genres);
     };
     useEffect(() => {
