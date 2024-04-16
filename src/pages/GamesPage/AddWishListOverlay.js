@@ -19,7 +19,7 @@ const AddWishListOverlay = ({ showOverlay }) => {
   };
   const fetchWishlist = async () => {
     setLoading(true);
-    const endPoint = `https://api.rawg.io/api/games?key=${key}&search=${submittedTerm}`;
+    const endPoint = `https://api.rawg.io/api/games?key=1be3562e62a244c4a6bfd6dbea03b151&search=${submittedTerm}`;
     const response = await axios.get(endPoint);
     setSearchResults(response.data.results);
     setLoading(false);
