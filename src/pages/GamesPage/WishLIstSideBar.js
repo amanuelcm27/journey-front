@@ -5,7 +5,7 @@ const WishListSideBar = ({ showWishList, setShowWishList }) => {
   const fetchWishlist = async () => {
     try {
       const response = await axios.get(
-        `https://journeysofaman.vercel.app/api/show_wishlist/`
+        `https://amanuelf.pythonanywhere.com/api/show_wishlist/`
       );
       setwishlist(response.data);
     } catch (e) {
@@ -15,7 +15,7 @@ const WishListSideBar = ({ showWishList, setShowWishList }) => {
   const removeFromWishList = async (item) => {
     try {
       const response = await axios.delete(
-        `https://journeysofaman.vercel.app/api/remove_wishlist/${item.id}/`
+        `https://amanuelf.pythonanywhere.com/api/remove_wishlist/${item.id}/`
       );
       fetchWishlist();
     } catch (e) {
@@ -25,6 +25,7 @@ const WishListSideBar = ({ showWishList, setShowWishList }) => {
   useEffect(() => {
     fetchWishlist();
   }, []);
+  console.log('WISHLIST',wishlist)
   return (
     <div className={showWishList}>
       <div className="inner-sidebar">

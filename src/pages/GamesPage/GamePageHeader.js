@@ -20,7 +20,7 @@ const GamePageHeader = ({
     };
     const searchGame = async () => {
       const response = await axios.get(
-        `https://journeysofaman.vercel.app/api/search_games/?search=${searchTerm}`
+        `https://amanuelf.pythonanywhere.com/api/search_games/?search=${searchTerm}`
       );
       setGameList(response.data);
     };

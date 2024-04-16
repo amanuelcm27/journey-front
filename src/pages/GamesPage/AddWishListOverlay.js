@@ -28,7 +28,7 @@ const AddWishListOverlay = ({ showOverlay }) => {
     const { name: title, background_image: image } = data;
     const structuredData = { title, image };
     axios
-      .post("https://journeysofaman.vercel.app/api/add_wishlist/", structuredData)
+      .post("https://amanuelf.pythonanywhere.com/api/add_wishlist/", structuredData)
       .then((response) => {
         setaddGameResponse(response.data);
       })

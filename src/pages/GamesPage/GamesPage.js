@@ -41,7 +41,7 @@ const GamesPage = () => {
 
   const fetchData = useCallback(async () => {
     try {
-      const response = await axios.get("https://journeysofaman.vercel.app/api/all_games/");
+      const response = await axios.get("https://amanuelf.pythonanywhere.com/api/all_games/");
       setGameList(response.data.games);
     } catch (e) {
       console.log(e);
@@ -49,7 +49,7 @@ const GamesPage = () => {
   }, []);
   const filterGameList = async (method, genreOption) => {
     const response = await axios.get(
-      `https://journeysofaman.vercel.app/api/filter/${method.toLowerCase()}/${genreOption}/`
+      `https://amanuelf.pythonanywhere.com/api/filter/${method.toLowerCase()}/${genreOption}/`
     );
     setGameList(response.data);
     setfilterState(method);

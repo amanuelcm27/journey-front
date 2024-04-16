@@ -5,13 +5,13 @@ const FilterBar = ({ filterGameList }) => {
     const [titleState, settitleState] = useState("title");
     const [all_genres, setAllGenres] = useState([]);
     const fetchGenres = async () => {
-      const response = await axios.get(`https://journeysofaman.vercel.app/api/all_genres/`);
+      const response = await axios.get(`https://amanuelf.pythonanywhere.com/api/all_genres/`);
       setAllGenres(response.data.genres);
     };
     useEffect(() => {
       fetchGenres();
     }, []);
-  
+    console.log("GENERE",all_genres);
     return (
       <div id="filter" className="filters">
         <div onClick={() => filterGameList("all", null)} className="filter-item">
