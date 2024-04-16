@@ -36,7 +36,7 @@ const HomePage = () => {
     const hiddenElements = document.querySelectorAll(".hidden");
     hiddenElements.forEach((element) => observer.observe(element));
     try {
-      const response = await axios.get("http://localhost:8000/api/all_games/");
+      const response = await axios.get("https://amanuelf.pythonanywhere.com/api/all_games/");
       setFetchedData(response.data.games);
       setGameCount(response.data.count);
     } catch (e) {
