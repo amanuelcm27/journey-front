@@ -1,8 +1,8 @@
 # 🎮 Journey — My Personal Game Collection
 
-
-Visit Here : https://journey.vercel.app
 **Journey** is a personal game collection platform where I track and store the games I play. It pulls data from the **RAWG API**, which offers a vast database of games, allowing users to browse, search, and add games to their collection.
+
+> 🌐 **Visit Here**: [https://journeyofaman.vercel.app](https://journeyofaman.vercel.app)
 
 ---
 
@@ -26,3 +26,9 @@ Visit Here : https://journey.vercel.app
 - **Deployment**: Vercel / Heroku / DigitalOcean (depending on your setup)
 
 ---
+
+## 🧪 Running Locally
+
+```bash
+# Clone the repository
+git clone https://github
