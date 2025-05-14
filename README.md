@@ -27,8 +27,4 @@
 
 ---
 
-## 🧪 Running Locally
 
-```bash
-# Clone the repository
-git clone https://github
